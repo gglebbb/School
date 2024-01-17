@@ -4,13 +4,34 @@ namespace Gleb
 {
     class Mainclass
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
+            bool fill;
             Console.WriteLine("Array info(length and autofill)");
             string info = Console.ReadLine();
             string[] inf = info.Split(" ");
-            OneDem uno = new OneDem(int.Parse(inf[0]), bool.Parse(inf[1]));
-            uno.Print_1();
+            if(inf.Length == 1)
+            {
+                fill = false;
+            }
+            else
+            {
+                fill = bool.Parse(inf[1]);
+            }
+            Duo_Dem(int.Parse(inf[0]), fill);
+        }
+
+        static void One_Dem(int len, bool fill)
+        {
+            OneDem uno = new OneDem(len, fill);
+            uno.Print_One();
+            uno.MoreThan100();    
+        }
+
+        static void Duo_Dem(int len, bool fill)
+        {
+            DuoDem duo = new DuoDem(len, fill);
+            duo.Print_duo();
         }
 
     }
@@ -52,7 +73,7 @@ namespace Gleb
         public void MoreThan100()
         {
             int x = 0;
-            int counter =0;
+            int counter = 0;
             foreach(var item in array)
             {
                 if(item > -100 && item < 100)
@@ -61,14 +82,15 @@ namespace Gleb
                 }
             }
             int[] newarr = new int[counter];
-            for(int k = 0;k<counter; k++)
+            for(int k = 0; k<array.Length; k++)
             {
-                if(newarr[k] > -100 && newarr[k] < 100)
+                if(array[k] > -100 && array[k] < 100)
                 {
                     newarr[x] = array[k];
                     x++;
-                }     
+                }    
             }
+
             PrintArray(newarr);
         }
         public void MoveOutDuplicat()
@@ -80,7 +102,7 @@ namespace Gleb
                 {
                     if (array[i] == array[j] && i != j)
                     {
-                        newArrayLen--;
+                        newArrLen--;
                         break;
                     }
                 }
@@ -124,13 +146,58 @@ namespace Gleb
             }
             Console.WriteLine();
         }
-        public void Print_1()
+        public void Print_One()
         {
             foreach (int item in array)
             {
                 Console.Write(item + " ");
             }
             Console.WriteLine();
+        }
+    }
+    class DuoDem
+    {
+        public bool autofill = false;
+        private int[,] duo_arr;
+
+        public DuoDem(int length, bool autofill)
+        {
+            int[,] duo_arr = new int[length, length];
+            if(autofill)
+            {
+                for(int i = 0; i < length; i++)
+                {
+                    for(int j = 0; j< length; j++)
+                    {
+                        duo_arr[i,j] = int.Parse(Console.ReadLine());
+                    }
+                    
+                }
+            }
+            else
+            {
+                Random rand = new Random();
+                for (int i = 0; i < length; i++)
+                {
+                    for(int j = 0; j<length; j++)
+                    {
+                        duo_arr[i,j] = rand.Next(-200, 200);
+                    }
+                    
+                }
+            }
+        }
+
+        public void Print_duo()
+        {
+            for(int i = 0; i < duo_arr.GetLength(0); i++)
+            {
+                for(int j = 0; j < duo_arr.GetLength(1); j++)
+                {
+                    Console.Write(duo_arr[i,j]+" ");
+                }
+                Console.Write("\n");
+            }
         }
     }
 }
