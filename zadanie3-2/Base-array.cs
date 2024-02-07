@@ -2,5 +2,12 @@ using System;
 
 namespace Gleb
 {
-    class abstract c
+    public abstract class BaseClass
+    {
+        public abstract void CreateMas();
+
+        public abstract void MidVal();
+
+        public abstract void Print();
+    }
 }

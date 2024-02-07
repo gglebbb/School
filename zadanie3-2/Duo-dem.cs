@@ -2,7 +2,7 @@ using System;
 
 namespace Gleb
 {
-    class DuoDem
+    public sealed class DuoDem : BaseClass
     {
         public bool autofill = false;
         private int[,] duo_arr;
@@ -21,49 +21,24 @@ namespace Gleb
             }
         }
 
-        private int[,] Input(int l, int w)
-        {
-            prom = new int[l, w];
-            for(int i = 0; i < l; i++)
-            {
-                for(int j = 0; j< w; j++)
-                {
-                    duo_arr[i,j] = int.Parse(Console.ReadLine());
-                }
-            }
-            return prom;
-        }
-
-        private int[,] RandomInput(int l, int w)
-        {
-            prom = new int[l, w];
-            Random rand = new Random();
-            for (int i = 0; i < l; i++)
-            {
-                for(int j = 0; j<w; j++)
-                {
-                    prom[i,j] = rand.Next(-200, 200);
-                }
-            }
-            return prom;
-        }
-
-        public void Create_Duo()
+        public override void CreateMas()
         {
             Console.WriteLine("Creating array...");
             Console.WriteLine("Sixe of your array(length and wigth)");
             string[] arr_inf = Console.ReadLine().Split(" ");
-            jag_arr = new int[arr_inf[0], arr_inf[1]];
-            for(int i = 0; i < int.Parse(arr_inf[0]); i++)
+            Console.WriteLine("Do you want to turn on autofill?(True or False");
+            bool auto  = bool.Parse(Console.ReadLine());
+            if(auto)
             {
-                for(int j = 0; j< int.Parse(arr_inf[1]); j++)
-                {
-                    duo_arr[i,j] = int.Parse(Console.ReadLine());
-                }
-            }        
+                duo_arr = Random(length);
+            }
+            else
+            {
+                duo_arr = Input(length);
+            }    
         }
 
-        public void Print_Duo()
+        public override void Print()
         {
             Console.WriteLine(duo_arr.Rank);
             Console.WriteLine("Your array:");
@@ -77,27 +52,7 @@ namespace Gleb
             }
         }
         
-        public void Print_Revers_Duo()
-        {
-            Console.WriteLine("Чётные строки пишутся наоборот:");
-            for(int i = 0; i < duo_arr.GetLength(0); i++)
-            {
-                for(int j = 0; j < duo_arr.GetLength(1); j++)
-                {
-                    if(i % 2 != 0)
-                    {
-                        Console.Write(duo_arr[i,duo_arr.GetLength(1)-j-1] + " ");
-                    }
-                    else
-                    {
-                        Console.Write(duo_arr[i,j]+" ");
-                    }
-                }
-                Console.Write("\n");
-            }
-        }
-
-        public void  Mid_Val_Duo()
+        public override void MidVal()
         {
             int allsum = 0;
             int MidVal = 0;
@@ -112,5 +67,32 @@ namespace Gleb
             Console.WriteLine($"Mid value: {MidVal}");
         }   
     
+        private int[,] Input(int l, int w)
+        {
+            prom = new int[l, w];
+            for(int i = 0; i < l; i++)
+            {
+                for(int j = 0; j< w; j++)
+                {
+                    duo_arr[i,j] = int.Parse(Console.ReadLine());
+                }
+            }
+            return prom;
+        }
+
+        private int[,] Random(int l, int w)
+        {
+            prom = new int[l, w];
+            Random rand = new Random();
+            for (int i = 0; i < l; i++)
+            {
+                for(int j = 0; j<w; j++)
+                {
+                    prom[i,j] = rand.Next(-200, 200);
+                }
+            }
+            return prom;
+        }
+
     }
 }

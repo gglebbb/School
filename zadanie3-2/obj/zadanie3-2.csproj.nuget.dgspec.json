@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/user/Документы/gleb/zadanie3-2/zadanie3-2.csproj": {}
+    "/home/user/Документы/gleb/School-main/zadanie3-2/zadanie3-2.csproj": {}
   },
   "projects": {
-    "/home/user/Документы/gleb/zadanie3-2/zadanie3-2.csproj": {
+    "/home/user/Документы/gleb/School-main/zadanie3-2/zadanie3-2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/user/Документы/gleb/zadanie3-2/zadanie3-2.csproj",
+        "projectUniqueName": "/home/user/Документы/gleb/School-main/zadanie3-2/zadanie3-2.csproj",
         "projectName": "zadanie3-2",
-        "projectPath": "/home/user/Документы/gleb/zadanie3-2/zadanie3-2.csproj",
+        "projectPath": "/home/user/Документы/gleb/School-main/zadanie3-2/zadanie3-2.csproj",
         "packagesPath": "/home/user/.nuget/packages/",
-        "outputPath": "/home/user/Документы/gleb/zadanie3-2/obj/",
+        "outputPath": "/home/user/Документы/gleb/School-main/zadanie3-2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/user/.nuget/NuGet/NuGet.Config"

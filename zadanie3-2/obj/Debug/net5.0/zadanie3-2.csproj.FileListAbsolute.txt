@@ -14,3 +14,11 @@
 /home/user/Документы/gleb/zadanie3-2/obj/Debug/net5.0/ref/zadanie3-2.dll
 /home/user/Документы/gleb/zadanie3-2/obj/Debug/net5.0/zadanie3-2.pdb
 /home/user/Документы/gleb/zadanie3-2/obj/Debug/net5.0/zadanie3-2.genruntimeconfig.cache
+/home/user/Документы/gleb/School-main/zadanie3-2/obj/Debug/net5.0/zadanie3-2.csproj.AssemblyReference.cache
+/home/user/Документы/gleb/School-main/zadanie3-2/obj/Debug/net5.0/zadanie3-2.GeneratedMSBuildEditorConfig.editorconfig
+/home/user/Документы/gleb/School-main/zadanie3-2/obj/Debug/net5.0/zadanie3-2.AssemblyInfoInputs.cache
+/home/user/Документы/gleb/School-main/zadanie3-2/obj/Debug/net5.0/zadanie3-2.AssemblyInfo.cs
+/home/user/Документы/gleb/School-main/zadanie3-2/obj/Debug/net5.0/zadanie3-2.csproj.CoreCompileInputs.cache
+/home/user/Документы/gleb/School-main/zadanie3-2/obj/Debug/net5.0/zadanie3-2.dll
+/home/user/Документы/gleb/School-main/zadanie3-2/obj/Debug/net5.0/ref/zadanie3-2.dll
+/home/user/Документы/gleb/School-main/zadanie3-2/obj/Debug/net5.0/zadanie3-2.pdb
