@@ -1,0 +1,15 @@
+C:\cSharp\zadanie3-2\obj\Debug\net7.0\zadanie3-2.csproj.AssemblyReference.cache
+C:\cSharp\zadanie3-2\obj\Debug\net7.0\zadanie3-2.GeneratedMSBuildEditorConfig.editorconfig
+C:\cSharp\zadanie3-2\obj\Debug\net7.0\zadanie3-2.AssemblyInfoInputs.cache
+C:\cSharp\zadanie3-2\obj\Debug\net7.0\zadanie3-2.AssemblyInfo.cs
+C:\cSharp\zadanie3-2\obj\Debug\net7.0\zadanie3-2.csproj.CoreCompileInputs.cache
+C:\cSharp\zadanie3-2\bin\Debug\net7.0\zadanie3-2.exe
+C:\cSharp\zadanie3-2\bin\Debug\net7.0\zadanie3-2.deps.json
+C:\cSharp\zadanie3-2\bin\Debug\net7.0\zadanie3-2.runtimeconfig.json
+C:\cSharp\zadanie3-2\bin\Debug\net7.0\zadanie3-2.dll
+C:\cSharp\zadanie3-2\bin\Debug\net7.0\zadanie3-2.pdb
+C:\cSharp\zadanie3-2\obj\Debug\net7.0\zadanie3-2.dll
+C:\cSharp\zadanie3-2\obj\Debug\net7.0\refint\zadanie3-2.dll
+C:\cSharp\zadanie3-2\obj\Debug\net7.0\zadanie3-2.pdb
+C:\cSharp\zadanie3-2\obj\Debug\net7.0\zadanie3-2.genruntimeconfig.cache
+C:\cSharp\zadanie3-2\obj\Debug\net7.0\ref\zadanie3-2.dll
