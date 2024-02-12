@@ -10,39 +10,22 @@ namespace Gleb
 
         public JaggedDem(bool autofill)
         {
-            Console.WriteLine("Information about jagged demension array");
-            Console.WriteLine("height of array: ");
-            int height = int.Parse(Console.ReadLine());
-            jag_arr = new int[height][];
-            if(autofill)
-            {
-                jag_arr = Random(height);
-            }
-            else
-            {
-                jag_arr = Input(height);  
-            }
+            Console.WriteLine("JaggedDem");
+            CreateMas();
         }
 
         public override void CreateMas()
         {
-            Console.WriteLine("Height of your new array: ");
-            int height = int.Parse(Console.ReadLine());
-            jag_arr = new int[height][];
-            for(int i = 0; i < height; i++)
+            Console.WriteLine("Do you want to turn on autofill?(True or False");
+            bool auto  = bool.Parse(Console.ReadLine());
+            if(auto)
             {
-                Console.WriteLine("Creating array...");
-                Console.WriteLine($"{i+1}-ая строка:");
-                string s = Console.ReadLine();
-                string[] str_arr = new string[s.Split(" ").Length];
-                int[] int_arr = new int[s.Split(" ").Length];
-                str_arr = s.Split(" ");
-                for(int j = 0; j < str_arr.Length; j++)
-                {
-                    int_arr[j] = int.Parse(str_arr[j]);
-                }
-                jag_arr[i] = int_arr;
-            }            
+                jag_arr = Random();
+            }
+            else
+            {
+                jag_arr = Input();
+            }
         }
 
         public override void Print()
@@ -74,9 +57,10 @@ namespace Gleb
             Console.WriteLine($"Mid value:{allsum/counter}");
         }
 
-        private int[][] Input(int h)
+        private int[][] Input()
         {
-            prom = new int[h][];
+            Console.WriteLine("Hight of array: ");
+            int h = Console.ReadLine();
             for(int i = 0; i < h; i++)
                 {
                     Console.WriteLine($"{i+1}-ая строка:");
@@ -93,9 +77,10 @@ namespace Gleb
             return prom;
         }
 
-        private int[][] Random(int h)
+        private int[][] Random()
         {
-            prom = new int[h][];
+            Random h = new Random;
+            prom = new int[h.Next(2,10)][];
             Random rand = new Random();
             for(int i = 0; i<h; i++)
             {

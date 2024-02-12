@@ -9,5 +9,6 @@ namespace Gleb
         public abstract void MidVal();
 
         public abstract void Print();
+
     }
 }

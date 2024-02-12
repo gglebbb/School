@@ -10,18 +10,8 @@ namespace Gleb
 
         public OneDem(bool autofill)
         {
-            Console.WriteLine("Information about one demension array");
-            Console.WriteLine("Length of array: ");
-            int length = int.Parse(Console.ReadLine());
-            array = new int[length];
-            if(autofill)
-            {
-                array = Random(length);
-            }
-            else
-            {
-                array = Input(length);
-            }
+            Console.WriteLine("OneDemensional");
+            CreateMas();
         }
 
         public override void CreateMas()
@@ -34,8 +24,7 @@ namespace Gleb
             if(auto)
             {
                 Random num = new Random();
-                int l = num.Next(2,10);
-                array = Random(l);
+                array = Random(num.Next(-200, 200));
             }
             else
             {

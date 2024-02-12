@@ -10,35 +10,19 @@ namespace Gleb
 
         public DuoDem( bool autofill)
         {
-            Console.WriteLine("Information about duo demension array");
-            Console.WriteLine("Length of array: ");
-            int length = int.Parse(Console.ReadLine());
-            Console.WriteLine("Wigth of array: ");
-            int wigth = int.Parse(Console.ReadLine());
-            duo_arr = new int[length, wigth];
-            if(autofill)
-            {
-                duo_arr = Random(length, wigth);
-            }
-            else
-            {
-                duo_arr = Input(length, wigth);
-            }
+            Console.WriteLine("DuoDemension");
+            CreateMaster();
         }
 
         public override void CreateMas()
         {
             Console.WriteLine("Creating array...");
-            Console.WriteLine("Sixe of your array(length and wigth)");
-            string[] arr_inf = Console.ReadLine().Split(" ");
             Console.WriteLine("Do you want to turn on autofill?(True or False");
             bool auto  = bool.Parse(Console.ReadLine());
             if(auto)
             {
                 Random l = new Random();
-                int prom_length = l.Next(2,10);
-                int prom_width = l.Next(2,10);
-                duo_arr = Random(prom_length, prom_width);
+                duo_arr = Random(l.Next(2,10), l.Next(2,10));
             }
             else
             {
