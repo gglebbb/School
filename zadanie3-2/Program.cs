@@ -20,11 +20,8 @@ namespace Gleb
             for(int i = 0; i<arrList.Length; i++)
             {
                 Console.WriteLine($"Information about {arrList[i]}");
-                Console.ForegroundColor = ConsoleColor.DarkRed;
                 arrList[i].Print();
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 arrList[i].MidVal();
-                Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("Do you want to turn on random generation of arrays?(yes or no)");
                 string s = Console.ReadLine().ToLower();
                 if(s == "yes")
@@ -36,9 +33,7 @@ namespace Gleb
                     autofill = false;
                 }
                 arrList[i].CreateMas(autofill);
-                Console.ForegroundColor = ConsoleColor.Blue;
                 arrList[i].Print();
-
             }
         }
     }
