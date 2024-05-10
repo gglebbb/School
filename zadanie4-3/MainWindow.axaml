@@ -1,0 +1,108 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" 
+        Width="1200" 
+        Height="800"
+        x:Class="zadanie4_3.MainWindow"
+        Title="zadanie4_3">
+    <Window.Styles>
+        <Style Selector="TextBlock">
+            <Setter Property="Margin" Value="0,10,20,20"></Setter>
+            <Setter Property="Padding" Value="5,0"></Setter>
+            <Setter Property="FontSize" Value="13"></Setter> 
+            <Setter Property="FontWeight" Value="Medium"></Setter>
+        </Style>
+            
+        <Style Selector="StackPanel">
+            <Setter Property="Margin" Value="12"></Setter>
+        </Style>
+    </Window.Styles>
+
+    <Grid   
+        ShowGridLines="False"
+        RowDefinitions="auto,*,auto"
+        ColumnDefinitions="900,*"
+        Background="#262A33">
+
+            <DockPanel  
+                Grid.Row ="0"
+                Grid.ColumnSpan="5">
+                    <TextBlock> Home </TextBlock>
+                    <TextBlock> About </TextBlock>
+                    <TextBlock> Blogs's Main Topic 1 </TextBlock>
+                    <TextBlock> Blogs's Main Topic 2 </TextBlock>
+                    <TextBlock> Blogs's Main Topic 3 </TextBlock>
+                    <TextBlock> Associated blogs </TextBlock>
+                    <TextBlock DockPanel.Dock="Right"
+                            TextAlignment="Right"> 
+                        RSS
+                    </TextBlock>
+            </DockPanel>
+
+            <StackPanel 
+                Orientation="Vertical"
+                Grid.Column="0"
+                Grid.Row="1">
+                    <TextBlock TextAlignment="Left" Margin="0, 0, 0, 15">Article 1</TextBlock>
+                    <TextBlock TextWrapping="Wrap">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt libero porttitor metus condimentum, ut ornare magna convallis. Proin volutpat tellus vitae quam dignissim ornare. Donec tristique metus sed cursus vestibulum. Nunc in dui nec tellus consequat hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec mollis mattis orci, eu laoreet nisi fermentum nec. Duis et ipsum eget nulla lacinia porttitor. Duis nulla lacus, sodales vitae commodo in, lacinia nec elit. Aliquam feugiat, nisl vitae semper fermentum, felis elit commodo est, eget euismod turpis elit quis lectus. Integer blandit, augue quis facilisis scelerisque, diam felis dictum magna, sed posuere nibh lacus eu tellus. Donec tempus risus diam, id gravida lectus congue ac. Integer vel sapien ante. Sed sed dolor vitae lectus dapibus venenatis. Nam volutpat ornare mi, sed imperdiet ex varius eu.
+                        Donec facilisis odio vitae diam molestie, consectetur luctus odio molestie. Phasellus ex urna, tristique in quam sit amet, vehicula aliquet nulla. Integer consectetur ipsum sit amet metus tempor, ut ullamcorper lacus pharetra. Aliquam pulvinar libero ipsum, porttitor molestie erat dignissim non. Nunc suscipit elementum massa, vel faucibus elit volutpat et. Quisque egestas diam quis ante commodo, a vehicula sapien tincidunt. Integer sed pretium eros. Ut eu leo lacinia, lobortis nulla ut, pulvinar urna. Donec egestas scelerisque diam id luctus.                    Nunc urna turpis, aliquam sed auctor non, imperdiet ac lectus. Nunc vitae leo sed arcu sollicitudin varius in suscipit nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis condimentum efficitur bibendum. Nulla a dolor cursus magna faucibus pellentesque. Sed id tortor in elit euismod tempus sed eu sapien. Integer imperdiet mauris sit amet porttitor placerat. Maecenas dignissim, enim et ullamcorper sodales, orci lacus lacinia nisi, in vehicula lorem ligula eget odio. Aliquam tincidunt magna sit amet porta congue. Phasellus diam ante, hendrerit vel justo nec, consectetur bibendum ex. Vivamus imperdiet dui felis, nec semper est blandit et. Quisque nisl ipsum, sodales ut vulputate dictum, lobortis eget urna. Maecenas porttitor sapien vestibulum, finibus odio et, faucibus est. Quisque ante justo, scelerisque quis tortor a, sollicitudin dictum mauris. Quisque eget augue eget turpis bibendum tincidunt vitae id diam.
+                        Nunc in nunc et urna ornare ultricies. Maecenas volutpat nulla dui, ut molestie ligula suscipit ut. Nullam eget lacus turpis. Donec rutrum placerat molestie. Vestibulum egestas felis quis ex tristique, ultrices ultrices urna imperdiet. Quisque vel risus rutrum, dignissim nibh at, euismod lacus. Nam nec mi volutpat, faucibus tellus ac, rhoncus ante. Integer euismod, lacus vitae tincidunt cursus, orci quam viverra magna, fringilla elementum nisi sem sit amet sem. Nulla consectetur tortor a diam ultricies euismod. Vivamus lacinia ex pharetra risus facilisis rutrum. Sed diam tortor, cursus non risus in, laoreet iaculis neque. Proin lobortis elit velit, sed venenatis justo sagittis et. Proin ullamcorper massa ac nulla consectetur, a faucibus sapien fermentum. Quisque a mauris dui.
+                    </TextBlock>
+                    <Image Height="300" Width="200" Source="/Assets/jdun.png"></Image>
+            </StackPanel>
+
+            <StackPanel
+                Orientation="Vertical"
+                Grid.Column="1"
+                Grid.Row="1">
+                    <TextBlock TextWrapping="Wrap" Margin="0, 42, 0, 0">
+                        Nullam dignissim et nisl vitae egestas. Cras aliquam nec sem nec feugiat. Donec vulputate leo ut erat venenatis convallis. Etiam eu dolor id quam fringilla euismod. Praesent faucibus auctor tortor non condimentum. Praesent cursus posuere risus. Phasellus sollicitudin leo eget imperdiet posuere. Vestibulum mi odio, varius quis nunc nec, sodales rutrum urna. Proin ultricies non justo in venenatis. Proin luctus dui massa, vel condimentum nibh fermentum et. Vivamus tincidunt nisl magna, vitae elementum eros porta eget. Mauris vehicula ut lacus sit amet dictum.
+                    </TextBlock>
+                    <TextBlock TextAlignment="Right" TextDecorations="Underline" Margin="0, 0, 0, 0">More</TextBlock>
+                    <TextBlock TextAlignment="Right" Margin="0, 5, 0, 0"> Yesterday </TextBlock>
+
+                    <TextBlock TextWrapping="Wrap">
+                        Duis arcu leo, pellentesque ac molestie ullamcorper, sollicitudin ac nisi. Donec tristique nisi sed ultricies finibus. Suspendisse metus felis, feugiat ac odio non, gravida elementum arcu. Phasellus laoreet tortor vitae dolor aliquam congue. Maecenas lectus lacus, tincidunt quis leo id, efficitur consequat odio. Sed ac laoreet libero. Curabitur aliquet tortor nec lorem posuere, in auctor tellus blandit. Mauris sed volutpat arcu, a auctor sapien.
+                    </TextBlock>
+                    <TextBlock TextAlignment="Right" TextDecorations="Underline" Margin="0, 0, 0, 0">More</TextBlock>
+                    <TextBlock TextAlignment="Right" Margin="0, 5, 0, 0">1 week ago</TextBlock>
+            </StackPanel>
+
+            <DockPanel
+                Grid.Row="2"
+                Grid.Column="0"
+                DockPanel.Dock="Bottom">
+                    <TextBlock 
+                        Padding="2,0" 
+                        VerticalAlignment="Center"
+                        Margin="0,10,10,10">
+                            Tags:
+                    </TextBlock>
+                    <TextBlock
+                        Padding="2,0"
+                        VerticalAlignment="Center"
+                        Margin="0,10,8,10">
+                            Tag 1 Tag 2 Tag 3 Tag 4
+                    </TextBlock>
+                    <StackPanel 
+                        DockPanel.Dock="Right" 
+                        Orientation="Horizontal"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center">
+                            <TextBlock
+                                Padding="2,0"
+                                Margin="0,10,20,10">
+                                    Rate this article
+                            </TextBlock>
+                            <TextBlock
+                                Padding = "2,0"
+                                Margin="0,10,20,10">
+                                    5/5 
+                            </TextBlock>
+                    </StackPanel>
+            </DockPanel>
+    </Grid>
+</Window>
